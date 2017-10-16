@@ -2,243 +2,243 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="description" content="A presentation about learning to adopt geospatial open source software tools" />
-    <meta name="author" content="Guido Stein" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="A presentation about learning to adopt geospatial open source software tools" />
+  <meta name="author" content="Guido Stein" />
 
 
-    <title>Open Source Adoption Counceling - NEURISA DAY 2017 - Guido Stein - Applied Geographics Inc.</title>
+  <title>Open Source Adoption Counceling - NEURISA DAY 2017 - Guido Stein - Applied Geographics Inc.</title>
 
-    <link rel="stylesheet" href="css/reveal.css">
-    <link rel="stylesheet" href="css/theme/moon.css">
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/moon.css">
 
-    <!-- Theme used for syntax highlighting of code -->
-    <link rel="stylesheet" href="lib/css/zenburn.css">
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
 
-    <!-- Printing and PDF exports -->
-    <script>
-        var link = document.createElement('link');
-        link.rel = 'stylesheet';
-        link.type = 'text/css';
-        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
-        document.getElementsByTagName('head')[0].appendChild(link);
-    </script>
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
 </head>
 
 <body>
+  <div class="reveal">
     <div class="reveal">
-        <div class="reveal">
-            <div class="slides">
-                <section>
-                    <section id="title-slide" data-background-image="img/nursery_abardwell.jpg">
-                        <div style="background-color:rgba(0,17,21,0.5);padding:5%" class="fragment fade-left">
-                            <h2>Open Source Adoption Counceling</h2>
-                            <p>Guido Stein - Geospatial Data Alchemist<br />Applied Geographics</p>
-                        </div>
-                    </section>
-                    <section id="welcome" data-background-image="img/happyfamily_quinnanya.jpg">
-                        <div style="background-color:rgba(0,17,21,0.5)">
-                            <aside class="notes">
-                                Welcome
-                                <ul>
-                                    <li>Adoption</li>
-                                    <li>Change is hard</li>
-                                    <li>Your not alone</li>
-                                    <li>Happy family of open source tools</li>
-                                </ul>
-                            </aside>
-                        </div>
-                    </section>
-                    <section data-background-image="img/burrito_bz3rk.jpg">
-                        <aside class="notes">
-                            About Me
-                            <ul>
-                                <li>Guido like Burrito</li>
-                                <li>About 2 decades of geospatial experience</li>
-                                <li>Geospatial Data Alchemist</li>
-                                <li>Turning crappy data into gold</li>
-                            </ul>
-                        </aside>
-                    </section>
-                </section>
-                <section>
-                    <h2>What to expect when you are expecting <span class="fragment fade-in" style="color:orange">to use Open Source Geospatial Tools</span></h2>
-                    <p>
-                        <ul>
-                            <span class="fragment left"><li>An adoption story</li></span>
-                            <span class="fragment fade-left"><li>What can Open Source Geospatial Tools do for me?</li>
-                            </span>
-                            <span class="fragment fade-left"><li>What can I do for Open Source Geospatial Tools</li></span>
-                            <span class="fragment fade-left"><li>Q&ampA</li></span>
-                        </ul>
-                    </p>
-                </section>
-                <section>
-                    <section>
-                        <h2>An adoption story</h2>
-                    </section>
-                    <section data-background-image="img/appgeo.png">
-                        <aside class="notes">
-                            About AppGeo
-                            <ul>
-                                <li>Over 25 years in the business</li>
-                                <li>I have been there for the last 10 years</li>
-                                <li>Always looking for effective tools and partners</li>
-                                <li>We are currently partners with Google, Carto, and Safe Software (makers of FME)</li>
-                            </ul>
-                        </aside>
-                    </section>
-                    <section data-background-image="img/bestofbreed.png">
-                        <aside class="notes">
-                            Best of Breed
-                            <ul>
-                                <li>We search for the best tool for the best job</li>
-                                <li>We have used tools from esri, AutoCAD, Bentley, Safe Software, Google, Microsoft</li>
-                                <li>Each tool tied to a specific domain and usecase</li>
-                                <li>Example, workig with engineers who want to update GIS meanse building solutions that can sync data across GIS and CAD formats</li>
-                            </ul>
-                        </aside>
-                    </section>
-                    <section data-background-image="img/ramsey_jodygarnett.jpg">
-                        <aside class="notes">
-                            A Visit From Paul Ramsey
-                            <ul>
-                                <li>After hearing Ramsey speak at NSGIC, Micheal Terner invited him to speak to our company</li>
-                                <li>Satisfaction from the staff is a selling point for OSS</li>
-                                <li>We were sold and were ready to try to make open source tools a part of our work</li>
-                                <li>Developers took off right away, the rest of us did not change for a while</li>
-                            </ul>
-                        </aside>
-                    </section>
-                    <section>
-                        <p>
-                            <image src="img/brokenheart.png" width=35% style="vertical-align: middle;" />
-                            <img src="img/ESRI_Logo.svg.png " width=35% style="vertical-align: middle;" />
-                        </p>
-                        <aside class="notes">
-                            Breaking up is hard to do
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
-                        </aside>
-                    </section>
-                    <section data-background="img/crossfit_women.jpg">
-                        <aside class="notes">
-                            Satisfaction
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
-                        </aside>
-                    </section>
-                </section>
-                <section>
-                    <section>
-                        <h2>What Can Open Source Tools Do for <span class="fragment highlight-red">me</span>?</h2>
-                    </section>
-                    <section id="make_maps" data-background="img/qgis.jpg">
-                        <aside class="notes">
-                            A Visit From Paul Ramsey
-                            <ul>
-                                <li>After hearing Ramsey speak at NSGIC, Micheal Terner invited him to speak to our company</li>
-                                <li>Satisfaction from the staff is a selling point for OSS</li>
-                                <li>We were sold and were ready to try to make open source tools a part of our work</li>
-                                <li>Developers took off right away, the rest of us did not change for a while</li>
-                            </ul>
-                        </aside>
-
-                    </section>
-                    <section id="CRUD" data-background="img/carto.png">
-                        <aside class="notes">
-                            <ul>
-                                <li>Create, Read, Update, Delete (CRUD)</li>
-                            </ul>
-                        </aside>
-                    </section>
-                    <section id="analysis" data-background="img/line_of_sight.png"></section>
-                    <section id="publish" data-background="img/geonode.png"></section>
-                    <section id="data-world" data-background="img/data.png"></section>
-                </section>
-                <section>
-                    <section>
-                        <h2>What Can <span class="fragment highlight-red">I</span> do for Open Source Tools?</h2></section>
-                    <section id="osgeo" data-background="img/osgeo.png"></section>
-                    <section id="github" data-background="img/github.png"></section>
-                    <section id="mailing_list" data-background="img/mail.png"></section>
-                    <section id="irc" data-background="img/irc.png"></section>
-                    <section id="libre" data-background="img/libre.png"></section>
-                </section>
-                <section id="thanks_for_fish">
-                    <div style="display: inline-block;width:100%;">
-                        Image credits
-                    </div>
-                    <div style="display: inline-block;width:45%;text-align:left">
-                        <ul>
-                            <li>
-                                Crib<br /><a href="https://www.flickr.com/photos/abardwell/346875988/in/photolist-wDQ9u-4y3ev2-2MWe6o-8tHq3g-8tHpTe-4VUiMh-8qjNPX-Lwi6z-4VQ1gn-FSYpnm-apr6M4-wDPVE-31ty9N-8tHqfD-6KMe6b-7UfDKy-8kpaLs-6Dxh1R-9QYMGc-4VUhyo-5ioF1m-8tLsbJ-8LtbuN-7VtcEB-8qnX6w-qx4kXz-7fijJu-rtQJn2-8122MN-4VUjGs-8kkYm6-62rkZb-oFQCwz-2Q1piC-8Lq8fR-8121Kw-agQHN-jjijHF-4vDxq8-7Vwrzq-7Vwrwd-8tHq9a-4vDyag-aKmnva-8122mq-8123eS-4vDDxV-faazKA-7VwrDQ-8122fW">abardwell</a>
-                            </li>
-                            <li>
-                                QGIS Map<br />by <a href="https://www.flickr.com/photos/46604778@N00/11406500333/in/photolist-inXi9R-obqsqg-nTVqKG-q9g3KW-nTW3GE-bwuYq8-nSF9Jr-obhd7b-o9oasA-dLAqeh-g5BK8V-i8uDJY-acr3GR-j1wojb-GVVaa5-8DnFLH-p5Zx9V-bcRqSz-odaxJ8-vuss5E-v9z3wr-kEZHNF-A1vB6p-i9PYLn-gcER7u-avPJvt-nr9r2o-8DqN1q-gmPFQx-acr3EH-actTnJ-oegess-P3NG2C-ehb1ot-9fzC8o-k1m8Zv-fieKG3-nTgT1A-g4hCFi-HguDf8-q2ScH3-7pL377-oyLmji-H9r2FK-rWHv8S-i8nfVX-i8nUT8-mbNehp-i8o4Am-i8nTXa">domjisch</a>
-                            </li>
-                            <li>
-                                Crossfit Women<br />by <a href="https://www.flickr.com/photos/23119666@N03/5826660348/in/photolist-9STa8b-fef67j-bjLek6-fef6Lq-e9dfPq-fefq7b-9YK2W5-T7mHLc-9YGj4x-eae3GB-XBNq7a-eaeoZn-eae9qF-eak5Uo-9YFVNX-9YG2zP-eaecq4-eajVph-eaeh9B-eaekT6-eadUqP-nj7PXJ-eaejna-eadW48-eae2YK-9YFTsk-9YGnGX-9YK5TL-9YKk1W-9YGhiR-eajdDW-9YGpxM-eadZnZ-9YK9ku-9YGa9M-eajFks-9YJLAd-eaedER-eadYwM-9YG6we-brk4sy-SormWx-SormZD-SormU8-SjLnU1-SjLqmq-Sorogr-SormL2-e9dghU-9YJXP9">Mark Bonica</a>
-                            </li>
-                            <li>
-                                Line of Sight<br />by <a href="https://www.youtube.com/watch?v=Z3fPTTtZ60I">Digital Globe</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div style="display: inline-block;width:45%:text-align:left;">
-                        <ul>
-                            <li>
-                                that
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-                <section>
-                    <h2>Thank you</h2>
-                    <p>Guido Stein</p>
-                    <p>Geospatial Data Alchemist</p>
-                    <p>Applied Geographics</p>
-                </section>
+      <div class="slides">
+        <section>
+          <section id="title-slide" data-background-image="img/nursery_abardwell.jpg">
+            <div style="background-color:rgba(0,17,21,0.5);padding:5%" class="fragment fade-left">
+              <h2>Open Source Adoption Counceling</h2>
+              <p>Guido Stein - Geospatial Data Alchemist<br />Applied Geographics</p>
             </div>
-        </div>
+          </section>
+          <section id="welcome" data-background-image="img/happyfamily_quinnanya.jpg">
+            <div style="background-color:rgba(0,17,21,0.5)">
+              <aside class="notes">
+                Welcome
+                <ul>
+                  <li>We are talking about software adoption</li>
+                  <li>This will change your life</li>
+                  <li>There are no dirty diapers to change</li>
+                  <li>You will need guidance and community to get going</li>
+                </ul>
+              </aside>
+            </div>
+          </section>
+          <section id="me" data-background-image="img/burrito_bz3rk.jpg">
+            <aside class="notes">
+              About Me
+              <ul>
+                <li>My name is Guido, sounds like Burrito</li>
+                <li>I have almost 2 decades of geospatial experience</li>
+                <li>My title is Geospatial Data Alchemist</li>
+                <li>I am known for turning crappy data into gold</li>
+              </ul>
+            </aside>
+          </section>
+        </section>
+        <section id="overview">
+          <h2>What to expect when you are expecting <span class="fragment fade-in" style="color:orange">to use Open Source Geospatial Tools</span></h2>
+          <p>
+            <ul>
+              <span class="fragment left"><li>An adoption story</li></span>
+              <span class="fragment fade-left"><li>What can Open Source Geospatial Tools do for me?</li>
+                            </span>
+              <span class="fragment fade-left"><li>What can I do for Open Source Geospatial Tools</li></span>
+              <span class="fragment fade-left"><li>Q&ampA</li></span>
+            </ul>
+          </p>
+        </section>
+        <section>
+          <section id="adopt">
+            <h2>An adoption story</h2>
+          </section>
+          <section id="appgeo" data-background-image="img/appgeo.png">
+            <aside class="notes">
+              About AppGeo
+              <ul>
+                <li>AppGeo been in business for 26 years</li>
+                <li>I have been there for the last 10 years</li>
+                <li>AppGeo is always looking for effective tools and partners</li>
+                <li>AppGeo is currently partners with Google, Carto, and Safe Software (makers of FME)</li>
+              </ul>
+            </aside>
+          </section>
+          <section id="breed" data-background-image="img/bestofbreed.png">
+            <aside class="notes">
+              Best of Breed
+              <ul>
+                <li>AppGeo believes in using the best tool for the job</li>
+                <li>AppGeo has used tools from esri, AutoCAD, Bentley, Safe Software, Google, Microsoft, and Blue Marble</li>
+                <li>AppGeo keeps up with multiple vendors and tools tied to specific domains and usecases</li>
+                <li>AppGeo has built tools to allow engineers to work in their CAD environment but also synch their latest data with their web mapping applications</li>
+              </ul>
+            </aside>
+          </section>
+          <section id="ramsey" data-background-image="img/ramsey_jodygarnett.jpg">
+            <aside class="notes">
+              A Visit From Paul Ramsey
+              <ul>
+                <li>After hearing Ramsey speak at NSGIC, Micheal Terner invited him to speak to our company</li>
+                <li>Satisfaction from the staff is a selling point for OSS</li>
+                <li>We were sold and were ready to try to make open source tools a part of our work</li>
+                <li>Developers took off right away, the rest of us did not change for a while</li>
+              </ul>
+            </aside>
+          </section>
+          <section id="heartbreak" data-background-image="img/cryingbaby_nateone.jpg">
+            <p class="fragment fade-left">
+              <image src="img/brokenheart.png" width=35% style="vertical-align: middle;" />
+              <img src="img/ESRI_Logo.svg.png " width=35% style="vertical-align: middle;" />
+            </p>
+            <aside class="notes">
+              Breaking up is hard to do
+              <ul>
+                <li>It is not easy to give up the tools you are used to</li>
+                <li>It takes a while to get comfortable with new tools</li>
+                <li>I ended up using a macintosh just to stop myself from using familiar tools</li>
+                <li>I started to learn the how to translate ideas from esri to other open source tools</li>
+              </ul>
+            </aside>
+          </section>
+          <section id="satisfaction" data-background="img/crossfit_women.jpg">
+            <aside class="notes">
+              Satisfaction
+              <ul>
+                <li>I am now more equiped to work with most databases</li>
+                <li>I now build tools using basic database concepts</li>
+                <li>I now know how to review data with QGIS</li>
+                <li>I now know how to get started with other tools of interest like R or Spark</li>
+              </ul>
+            </aside>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>What Can Open Source Tools Do for <span class="fragment highlight-red">me</span>?</h2>
+          </section>
+          <section id="make_maps" data-background="img/qgis.jpg">
+            <aside class="notes">
+              A Visit From Paul Ramsey
+              <ul>
+                <li>After hearing Ramsey speak at NSGIC, Micheal Terner invited him to speak to our company</li>
+                <li>Satisfaction from the staff is a selling point for OSS</li>
+                <li>We were sold and were ready to try to make open source tools a part of our work</li>
+                <li>Developers took off right away, the rest of us did not change for a while</li>
+              </ul>
+            </aside>
 
-        <script src="lib/js/head.min.js "></script>
-        <script src="js/reveal.js "></script>
+          </section>
+          <section id="CRUD" data-background="img/carto.png">
+            <aside class="notes">
+              <ul>
+                <li>Create, Read, Update, Delete (CRUD)</li>
+              </ul>
+            </aside>
+          </section>
+          <section id="analysis" data-background="img/line_of_sight.png"></section>
+          <section id="publish" data-background="img/geonode.png"></section>
+          <section id="data-world" data-background="img/data.png"></section>
+        </section>
+        <section>
+          <section>
+            <h2>What Can <span class="fragment highlight-red">I</span> do for Open Source Tools?</h2></section>
+          <section id="osgeo" data-background="img/osgeo.png"></section>
+          <section id="github" data-background="img/github.png"></section>
+          <section id="mailing_list" data-background="img/mail.png"></section>
+          <section id="irc" data-background="img/irc.png"></section>
+          <section id="libre" data-background="img/libre.png"></section>
+        </section>
+        <section id="thanks_for_fish">
+          <div style="display: inline-block;width:100%;">
+            Image credits
+          </div>
+          <div style="display: inline-block;width:45%;text-align:left">
+            <ul>
+              <li>
+                Crib<br /><a href="https://www.flickr.com/photos/abardwell/346875988/in/photolist-wDQ9u-4y3ev2-2MWe6o-8tHq3g-8tHpTe-4VUiMh-8qjNPX-Lwi6z-4VQ1gn-FSYpnm-apr6M4-wDPVE-31ty9N-8tHqfD-6KMe6b-7UfDKy-8kpaLs-6Dxh1R-9QYMGc-4VUhyo-5ioF1m-8tLsbJ-8LtbuN-7VtcEB-8qnX6w-qx4kXz-7fijJu-rtQJn2-8122MN-4VUjGs-8kkYm6-62rkZb-oFQCwz-2Q1piC-8Lq8fR-8121Kw-agQHN-jjijHF-4vDxq8-7Vwrzq-7Vwrwd-8tHq9a-4vDyag-aKmnva-8122mq-8123eS-4vDDxV-faazKA-7VwrDQ-8122fW">abardwell</a>
+              </li>
+              <li>
+                QGIS Map<br />by <a href="https://www.flickr.com/photos/46604778@N00/11406500333/in/photolist-inXi9R-obqsqg-nTVqKG-q9g3KW-nTW3GE-bwuYq8-nSF9Jr-obhd7b-o9oasA-dLAqeh-g5BK8V-i8uDJY-acr3GR-j1wojb-GVVaa5-8DnFLH-p5Zx9V-bcRqSz-odaxJ8-vuss5E-v9z3wr-kEZHNF-A1vB6p-i9PYLn-gcER7u-avPJvt-nr9r2o-8DqN1q-gmPFQx-acr3EH-actTnJ-oegess-P3NG2C-ehb1ot-9fzC8o-k1m8Zv-fieKG3-nTgT1A-g4hCFi-HguDf8-q2ScH3-7pL377-oyLmji-H9r2FK-rWHv8S-i8nfVX-i8nUT8-mbNehp-i8o4Am-i8nTXa">domjisch</a>
+              </li>
+              <li>
+                Crossfit Women<br />by <a href="https://www.flickr.com/photos/23119666@N03/5826660348/in/photolist-9STa8b-fef67j-bjLek6-fef6Lq-e9dfPq-fefq7b-9YK2W5-T7mHLc-9YGj4x-eae3GB-XBNq7a-eaeoZn-eae9qF-eak5Uo-9YFVNX-9YG2zP-eaecq4-eajVph-eaeh9B-eaekT6-eadUqP-nj7PXJ-eaejna-eadW48-eae2YK-9YFTsk-9YGnGX-9YK5TL-9YKk1W-9YGhiR-eajdDW-9YGpxM-eadZnZ-9YK9ku-9YGa9M-eajFks-9YJLAd-eaedER-eadYwM-9YG6we-brk4sy-SormWx-SormZD-SormU8-SjLnU1-SjLqmq-Sorogr-SormL2-e9dghU-9YJXP9">Mark Bonica</a>
+              </li>
+              <li>
+                Line of Sight<br />by <a href="https://www.youtube.com/watch?v=Z3fPTTtZ60I">Digital Globe</a>
+              </li>
+            </ul>
+          </div>
+          <!-- <div style="display: inline-block;width:45%:text-align:left;">
+            <ul>
+              <li>
+                that
+              </li>
+            </ul>
+          </div> -->
+        </section>
+        <section>
+          <h2>Thank you</h2>
+          <p>Guido Stein</p>
+          <p>Geospatial Data Alchemist</p>
+          <p>Applied Geographics</p>
+        </section>
+      </div>
+    </div>
 
-        <script>
-            // More info about config & dependencies:
-            // - https://github.com/hakimel/reveal.js#configuration
-            // - https://github.com/hakimel/reveal.js#dependencies
-            Reveal.initialize({
-                dependencies: [{
-                        src: 'plugin/markdown/marked.js'
-                    },
-                    {
-                        src: 'plugin/markdown/markdown.js'
-                    },
-                    {
-                        src: 'plugin/notes/notes.js',
-                        async: true
-                    },
-                    {
-                        src: 'plugin/highlight/highlight.js',
-                        async: true,
-                        callback: function() {
-                            hljs.initHighlightingOnLoad();
-                        }
-                    }
-                ]
-            });
-        </script>
+    <script src="lib/js/head.min.js "></script>
+    <script src="js/reveal.js "></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        dependencies: [{
+            src: 'plugin/markdown/marked.js'
+          },
+          {
+            src: 'plugin/markdown/markdown.js'
+          },
+          {
+            src: 'plugin/notes/notes.js',
+            async: true
+          },
+          {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            callback: function() {
+              hljs.initHighlightingOnLoad();
+            }
+          }
+        ]
+      });
+    </script>
 </body>
 
 </html>
