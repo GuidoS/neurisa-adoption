@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "express": "~4.17.3",
-    "grunt-cli": "~0.1.13",
+    "grunt-cli": "~1.0.0",
     "mustache": "~2.3.2",
     "socket.io": "~2.2.0",
     "@snyk/protect": "latest"
